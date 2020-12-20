@@ -19,7 +19,7 @@
     position: absolute;
     content: " ";
     width: 50%;
-    height: 10px;
+    height: 5px;
     background-color: #FFC107;
     border-radius: -50%;
     
@@ -31,7 +31,7 @@
     left: 62%;
     content: " ";
     width:95%;
-    height: 10px;
+    height: 5px;
     /* background-color: gainsboro; */
    
 }

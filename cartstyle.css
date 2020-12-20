@@ -19,7 +19,7 @@
     position: absolute;
     content: " ";
     width: 11%;
-    height: 10px;
+    height: 5px;
     background-color: #FFC107;
     border-radius: -50%;
     
@@ -31,7 +31,7 @@
     left: 62%;
     content: " ";
     width:95%;
-    height: 10px;
+    height: 5px;
     background-color: gainsboro;
    
 }
@@ -68,3 +68,40 @@ color: black;
 
 
   }
+
+  input[type=number]{
+      width: 15%;
+      background-color: #f8f8f8;
+      box-shadow: none;
+  }
+  table td {
+      vertical-align: middle !important;
+  }
+
+  input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
