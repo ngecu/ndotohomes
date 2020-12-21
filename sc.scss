@@ -1,0 +1,122 @@
+.sidenav{
+  /* Arrow Animation Styles Start */
+
+li,
+.arrow,
+.arrow:before,
+.arrow:after,
+.content {
+  transition: all .3s ease-in-out;
+}
+
+.arrow {
+  position: absolute;
+  right: 30px;
+  top: 42px;
+}
+
+.arrow,
+.arrow:before,
+.arrow:after {
+  border-radius: 25px;
+}
+
+.arrow:before {
+  content: " ";
+  width: 25px;
+  height: 6px;
+  left: 50%;
+  margin-left: -25px;
+  background-color: black;
+  position: absolute;
+  transform: rotate(45deg);
+}
+
+.arrow:after {
+  content: " ";
+  width: 25px;
+  height: 6px;
+  background-color: black;
+  position: absolute;
+  right: -15px;
+  transform: rotate(-45deg);
+}
+
+.open .arrow:before {
+  transform: rotate(-45deg);
+}
+
+.open .arrow:after {
+  transform: rotate(45deg);
+}
+
+
+/* Arrow Animation Styles End */
+
+body {
+  background: #fff;
+}
+
+h1,
+h2,
+p,
+li {
+  font-family: 'Alegreya', serif;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  padding: 20px;
+  overflow: hidden;
+  max-height: 50px;
+}
+
+li.open {
+  padding-bottom: 15%;
+  cursor: default;
+}
+
+li:hover {
+  background: #ebebeb;
+}
+
+li.open:hover {
+  background: none;
+}
+
+li h1 {
+  display: inline;
+}
+
+div.container {
+  margin: auto;
+  width: 600px;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.content {
+  opacity: 0;
+}
+
+.open .content {
+  opacity: 1;
+}
+}

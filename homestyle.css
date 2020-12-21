@@ -34,14 +34,21 @@ ul{
     background-color: rgba(48, 152, 157, 0.4);
   }
 
-  .hovereffect:hover .hovereffect img {
+  .hovereffect:hover  .img-responsive  {
     transform: scale(1.2);
   }
+
   
   .hovereffect img {
     display: block;
     position: relative;
+    transition: transform .2s;
   }
+  .navbar-brand img{
+    margin: 2%;
+  }
+  
+  
 /*   
   .hovereffect h2 {
     text-transform: uppercase;
@@ -96,6 +103,7 @@ ul{
   
   .hovereffect a.info:hover  {
     box-shadow: 0 0 5px #fff;
+    
     
   }
   .hovereffect a.info:hover .hovereffect img{
@@ -156,6 +164,7 @@ line-height: 20px;
 .sidenav .card{
   border: none;
 }
+
 .sidenav .card-header {
   background-color: white;
   font-weight: 700;
@@ -209,7 +218,8 @@ color: #fff;
 }
 .card-ecommerce:hover{
   position:relative;
-  box-shadow: 5px 3px 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.38);
+  /* box-shadow: 5px 3px 5px 5px rgba(0, 0, 0, 0.3); */
     /* -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; */
@@ -223,9 +233,9 @@ color: #fff;
     width: 100%;
   }
   
-  .sticky + .content {
-    padding-top: 60px;
-  }
+ .nav-item a i{
+   font-size: 20px;
+ }
   .bg-dark a{
     text-decoration: none;
     color: white;
@@ -257,6 +267,14 @@ color: #fff;
     #carouselExampleIndicators{
       z-index: -1;
     }
+    strong a{
+      color: black;
+      font-size: 14px;
+    }
+    .add{
+      font-size: 10px;
+      opacity: 1;
+    }
 
   }
 
@@ -280,7 +298,6 @@ color: #fff;
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -444,3 +461,127 @@ color: #fff;
   .list-group.list-group-root > .list-group > .list-group > .list-group-item {
     padding-left: 45px;
   }
+
+
+
+
+
+
+  
+
+  .sidenav {
+    /* Arrow Animation Styles Start */
+    /* Arrow Animation Styles End */
+  }
+  
+  .sidenav li,
+  .sidenav .arrow,
+  .sidenav .arrow:before,
+  .sidenav .arrow:after,
+  .sidenav .content {
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  
+  .sidenav .arrow {
+    position: absolute;
+    right: 30px;
+    top: 42px;
+  }
+  
+  .sidenav .arrow,
+  .sidenav .arrow:before,
+  .sidenav .arrow:after {
+    border-radius: 25px;
+  }
+  
+  .sidenav .arrow:before {
+    content: " ";
+    width: 25px;
+    height: 6px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: black;
+    position: absolute;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  .sidenav .arrow:after {
+    content: " ";
+    width: 25px;
+    height: 6px;
+    background-color: black;
+    position: absolute;
+    right: -15px;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .sidenav .open .arrow:before {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  
+  .sidenav .open .arrow:after {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+  .sidenav body {
+    background: #fff;
+  }
+  
+  .sidenav h1,
+  .sidenav h2,
+  .sidenav p,
+  .sidenav li {
+    font-family: 'Alegreya', serif;
+  }
+  
+  .sidenav h1 {
+    font-size: 32px;
+  }
+  
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidenav li {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    max-height: 50px;
+  }
+  
+  .sidenav li.open {
+    padding-bottom: 50%;
+    cursor: default;
+    
+  }
+  
+  .sidenav li:hover {
+    background: #ebebeb;
+  }
+  
+  .sidenav li.open:hover {
+    background: none;
+  }
+  
+  .sidenav li h1 {
+    display: inline;
+  }
+  
+  
+  /* .sidenav .content {
+    opacity: 0;
+  } */
+  
+  .sidenav .open .content {
+    opacity: 1;
+  }
+  /*# sourceMappingURL=sc.css.map */

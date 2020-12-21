@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Slider - Range slider</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="sc.css">
+  <script>
+  $( function() {
+    $( "#slider-range" ).slider({
+      range: true,
+      min: 0,
+      max: 500,
+      values: [ 75, 300 ],
+      slide: function( event, ui ) {
+        $( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      }
+    });
+    $( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+      " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+  } );
+  </script>
+</head>
+<body>
+ 
+<p>
+  <label for="amount">Price range:</label>
+  <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+</p>
+ 
+<div id="slider-range"></div>
+
+
+<ul>
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown">First Menu <i class="icon-arrow"></i></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown">Second Menu <i class="icon-arrow"></i></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a href="#" data-toggle="dropdown">Third Menu <i class="icon-arrow"></i></a>
+    <ul class="dropdown-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </li>
+</ul>
+ 
+
+<div class="container">
+  <ul>
+    <li>
+      <h1>
+        Accordion #1
+      </h1>
+      <div class="arrow"></div>
+      <div class="content">
+        <h2>
+          Hi there!
+        </h2>
+      </div>
+    </li>
+    <li>
+      <h1>
+        Accordion #2
+      </h1>
+      <div class="arrow"></div>
+      <div class="content">
+        <h2>
+          Hi there!
+        </h2>
+      </div>
+    </li>
+    <li>
+      <h1>
+        Accordion #3
+      </h1>
+      <div class="arrow"></div>
+      <div class="content">
+        <h2>
+          Hi there!
+        </h2>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
+<script>
+  $('li').click(function() {
+  $('li').removeClass('open');
+  $(this).toggleClass('open');
+})
+</script>
+<script>
+  // Dropdown Menu
+var dropdown = document.querySelectorAll('.dropdown');
+var dropdownArray = Array.prototype.slice.call(dropdown,0);
+dropdownArray.forEach(function(el){
+	var button = el.querySelector('a[data-toggle="dropdown"]'),
+			menu = el.querySelector('.dropdown-menu'),
+			arrow = button.querySelector('i.icon-arrow');
+
+	button.onclick = function(event) {
+		if(!menu.hasClass('show')) {
+			menu.classList.add('show');
+			menu.classList.remove('hide');
+			arrow.classList.add('open');
+			arrow.classList.remove('close');
+			event.preventDefault();
+		}
+		else {
+			menu.classList.remove('show');
+			menu.classList.add('hide');
+			arrow.classList.remove('open');
+			arrow.classList.add('close');
+			event.preventDefault();
+		}
+	};
+})
+
+Element.prototype.hasClass = function(className) {
+    return this.className && new RegExp("(^|\\s)" + className + "(\\s|$)").test(this.className);
+};
+</script>
+ 
+</body>
+</html>
