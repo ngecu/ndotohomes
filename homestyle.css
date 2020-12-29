@@ -1,6 +1,7 @@
-.row #carouselExampleIndicators{
+.second-couresel #carouselExampleIndicators{
   display: none;
 }
+
 
 li{
     list-style: none;
@@ -11,6 +12,14 @@ ul{
 }
 .outer{
   background-color: #e1e6ef;
+}
+strong a{
+  color: #020203;
+  
+}
+strong a:hover{
+  color: #020203;
+  text-decoration: none;
 }
 .hovereffect {
     width: 100%;
@@ -279,16 +288,19 @@ color: #fff;
       font-size: 10px;
       opacity: 1;
     }
-    .col-12,.col-sm-12{
-      margin-top: 1%;
+    .col-12,.col-sm-12,.col-6{
+      margin-top: 2%;
     }
 
     .lg-desktop{
       display: none;
     }
 
-  .row #carouselExampleIndicators{
+  .second-couresel #carouselExampleIndicators{
     display: block;
+  }
+  h2{
+    font-size: 1.5rem;
   }
     
 
@@ -423,9 +435,9 @@ color: #fff;
   top: 2%;
   width: 50px;
   height: 50px;
-  padding-top: 3%;
-  padding-left: 2%;
-  text-align: justify;
+  padding-top: 6%;
+  padding-left: 5%;
+  font-size: 15px;
 }
 .image-nav{
   display: none;
@@ -633,13 +645,7 @@ color: #fff;
     .sidenav .nav-side-menu .menu-list .menu-content {
       display: block;
     }
-  .lg-desktop{
-      display: none;
-    }
-
-  .row #carouselExampleIndicators{
-    display: block;
-  }
+ 
     
 
   }
