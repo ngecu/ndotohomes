@@ -21,6 +21,7 @@ strong a:hover{
   color: #020203;
   text-decoration: none;
 }
+
 .hovereffect {
     width: 100%;
     height: 100%;
@@ -56,6 +57,7 @@ strong a:hover{
     display: block;
     position: relative;
     transition: transform .2s;
+    height: 100%;
   }
   .navbar-brand img{
     margin: 2%;
@@ -161,7 +163,7 @@ line-height: 20px;
 } */
 
 .card {
-    
+    border: none;
     padding: 0px;
 }
 .nav-item{
@@ -187,6 +189,7 @@ line-height: 20px;
 .sidenav .card-header a,.sidenav .card-header button i{
   font-size: 14px;
 }
+
 .card-footer{
     cursor: pointer;
 }
@@ -266,6 +269,15 @@ color: #fff;
     margin-top: 1%;
     padding: 0 !important;
   }
+.bg-dark{
+    background: #000 !important;
+  }
+  .bg-dark a{
+    color: #777 !important;
+  }
+  .list-unstyled li {
+    color: #777 !important;
+}
 
   @media screen and (max-width: 600px) {
   
@@ -288,19 +300,41 @@ color: #fff;
       font-size: 10px;
       opacity: 1;
     }
-    .col-12,.col-sm-12,.col-6{
-      margin-top: 2%;
+    .first-row .col-12,.first-row .col-sm-12,.first-row .col-6{
+      margin-bottom: 5%;
     }
-
+    .second-row .col-12,.second-row .col-sm-12,.second-row .col-6{
+      margin-bottom: 5%;
+    }
+    .card .card-body .row .col-6{
+      margin-bottom: 5%;
+    }
     .lg-desktop{
       display: none;
     }
+    
 
   .second-couresel #carouselExampleIndicators{
     display: block;
   }
   h2{
     font-size: 1.5rem;
+  }
+
+  .first-couresel{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .hovereffect{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+  }
+  p,a,{
+    font-size: small !important;
+  }
+  h1,h2,h3,h4,h5{
+    font-size: medium;
   }
     
 
@@ -389,7 +423,7 @@ color: #fff;
 
 }
 .search-containers button {
-  float: right;
+  float: left;
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
@@ -438,6 +472,11 @@ color: #fff;
   padding-top: 6%;
   padding-left: 5%;
   font-size: 15px;
+}
+.out-of-stock{
+  position: absolute;
+left: 25%;
+padding: 2%;
 }
 .image-nav{
   display: none;
@@ -657,3 +696,4 @@ color: #fff;
   /*# sourceMappingURL=sc.css.map */
 
  
+  
