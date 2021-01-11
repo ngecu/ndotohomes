@@ -2,23 +2,26 @@
 body{
 	padding-top: 100px;
 }
-
+/* 
 #content-wrapper{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-}
+} */
 
 .column{
-	width: 600px;
+	/* width: 600px; */
 	padding: 10px;
 
 }
+img{
+  width: 100%;
+}
 
 #featured{
-	max-width: 500px;
-	max-height: 600px;
+	/* max-width: 500px;
+	max-height: 600px; */
 	object-fit: cover;
 	cursor: pointer;
 	border: 2px solid black;
@@ -147,3 +150,4 @@ body {
   font-size: 32px;
   line-height: 32px;
 }
+

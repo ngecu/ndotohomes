@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Slider</title>
+	<title>Ndoto Homes</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -10,51 +10,104 @@
 </head>
 <body>
 
-	 
-	<div class="tiles">
-		<div class="tile" data-scale="1.1" data-image="http://ultraimg.com/images/0yS4A9e.jpg"></div>
-		<div class="tile" data-scale="1.6" data-image="http://ultraimg.com/images/hzQ2IGW.jpg"></div>
-		<div class="tile" data-scale="2.4" data-image="http://ultraimg.com/images/bNeWGWB.jpg"></div>
+	
+	  <div class="bg-light p-4">
+		<div id="content-wrapper " class="container">
+			<div class="row ">
+				<div class="col-sm">
+					<img id=featured src="images/shoe1.jpg">
+	
+				<div id="slide-wrapper" >
+					<img id="slideLeft" class="arrow" src="images/arrow-left.png">
+	
+					<div id="slider">
+						<img class="thumbnail active" src="images/shoe1.jpg">
+						<img class="thumbnail" src="images/shoe2.jpg">
+						<img class="thumbnail" src="images/shoe3.jpg">
+	
+						<img class="thumbnail" src="images/shoe2.jpg">
+						<img class="thumbnail" src="images/shoe3.jpg">
+	
+						<img class="thumbnail" src="images/shoe2.jpg">
+						<img class="thumbnail" src="images/shoe3.jpg">
+					</div>
+	
+					<img id="slideRight" class="arrow" src="images/arrow-right.png">
+				</div>
+	
+				  </div>
+	
+				  <div class="col-sm">
+					<p class="text-warning" style="margin: 0;">Sale</p>
+				<h1>Awesome Shoes</h1>
+				<hr>
+				
+				<h3>$89.99</h3>
+	
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	<div class="flex">
+		<input value=1 type="number" style="width: 10%;">
+		<a class="btn btn-warning  btn-lg " style="width: 80%;" href="#">Add to Cart</a>
+				  </div>
+				  <p>
+					<b>We offer countrywide Delivery</b>
+				  </p>
+	
+				  <ul>
+					<li><i class="far fa-check-circle"></i> Get quality products at affordable Prices</li>
+					<li><i class="far fa-check-circle"></i> For enquiries Call/WhatsApp 0792222158</li>
+				</ul>
+	
+				  <fieldset>
+					<legend>Personalia:</legend>
+				<img src="https://themedemo.commercegurus.com/shoptimizer-demodata/wp-content/uploads/sites/53/2018/07/trust-symbols_a.jpg" class="w-100" alt="">
+				   </fieldset>
+			</div>
+	
+	
+		</div>
+		</div>
+	  </div>
+	  <div class="container">
+		  <div class="text-center">
+			  <h4>Reviews</h4>
+		  </div>
+		  <span>There are no reviews yet </span>
+		  <b>Be the first to review “Smoothie/icecream glass 6pc” </b>
+		  <p>Your email address will not be published. Required fields are marked *</p>
+		  <p>Your rating *</p>
+
+		  <form>
+			<div class="form-group">
+			  <label for="exampleFormControlTextarea1">Example textarea</label>
+			  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+			</div>
+
+			<div class="form-row">
+				<div class="col">
+					<label for="Name">Name</label>
+				  <input type="text" class="form-control" placeholder="First name">
+				</div>
+				<div class="col">
+					<label for="Email">Email</label>
+				  <input type="email" class="form-control" placeholder="">
+				</div>
+			  </div>
+			  <input type="checkbox" name="Save" id="">
+			  <label for="save">Save my name, email, and website in this browser for the next time I comment.</label>
+			  <br>
+<button class="btn-lg btn-warning btn">Submit</button>
+		  </form>
+		  <hr>
+
+		  <div class="text-center">
+			<h4>Categories <span>Glasses</span></h4>
+		</div>
+		<hr>
+
 	  </div>
 
-	  
 
-	<div id="content-wrapper">
-		
-
-		<div class="column">
-			<img id=featured src="images/shoe1.jpg">
-
-			<div id="slide-wrapper" >
-				<img id="slideLeft" class="arrow" src="images/arrow-left.png">
-
-				<div id="slider">
-					<img class="thumbnail active" src="images/shoe1.jpg">
-					<img class="thumbnail" src="images/shoe2.jpg">
-					<img class="thumbnail" src="images/shoe3.jpg">
-
-					<img class="thumbnail" src="images/preset1.png">
-					<img class="thumbnail" src="images/preset2.jpg">
-					<img class="thumbnail" src="images/preset3.jpg">
-					<img class="thumbnail" src="images/preset4.jpg">
-				</div>
-
-				<img id="slideRight" class="arrow" src="images/arrow-right.png">
-			</div>
-		</div>
-
-		<div class="column">
-			<h1>Awesome Shoes</h1>
-			<hr>
-			<h3>$89.99</h3>
-
-			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-			<input value=1 type="number">
-			<a class="btn btn-dark" href="#">Add to Cart</a>
-		</div>
-
-	</div>
 
 	<script type="text/javascript">
 		let thumbnails = document.getElementsByClassName('thumbnail')
@@ -91,31 +144,6 @@
 
 	</script>
 
-	<script>
-
-$('.tile')
-    // tile mouse actions
-    .on('mouseover', function(){
-      $(this).children('.photo').css({'transform': 'scale('+ $(this).attr('data-scale') +')'});
-    })
-    .on('mouseout', function(){
-      $(this).children('.photo').css({'transform': 'scale(1)'});
-    })
-    .on('mousemove', function(e){
-      $(this).children('.photo').css({'transform-origin': ((e.pageX - $(this).offset().left) / $(this).width()) * 100 + '% ' + ((e.pageY - $(this).offset().top) / $(this).height()) * 100 +'%'});
-    })
-    // tiles set up
-    .each(function(){
-      $(this)
-        // add a photo container
-        .append('<div class="photo"></div>')
-        // some text just to show zoom level on current item in this example
-        .append('<div class="txt"><div class="x">'+ $(this).attr('data-scale') +'x</div>ZOOM ON<br>HOVER</div>')
-        // set up a background image for each tile based on data-image attribute
-        .children('.photo').css({'background-image': 'url('+ $(this).attr('data-image') +')'});
-    })
-
-	</script>
 
 </body>
 </html>
